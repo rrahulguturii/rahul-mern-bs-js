@@ -1,0 +1,36 @@
+.main-heading {
+    text-align: center;
+    background-color: rgb(93, 199, 236);
+}
+
+body{
+    background-color: white;
+}
+.para1{
+    padding: 5px;
+    height: 45px;
+    font-size: 25px;
+}
+
+#navcol-1 {
+    background-color: rgb(161, 160, 165);
+}
+
+.nav-item:first-child {
+    padding-left: 20px;
+}
+.nav-item {
+    padding-right: 30px;
+}
+li {
+    padding-right: 10px;
+}
+
+.nav-link,
+.side-box p {
+    color: white;
+}
+
+.side-box {
+    background-color: rgb(98, 97, 99);
+}

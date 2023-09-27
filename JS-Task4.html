@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS-Task 4</title>
+</head>
+<body>
+    <br>
+    <button onclick="showDate()">Show Date</button>
+    <br>
+    
+    <p id="dateResult"></p>
+    
+    <br><br>
+    
+    <button onclick="showTime()">Show Time</button>
+    <br>
+
+    <p id="timeResult"></p>
+    
+    <script>
+        function showDate() {
+            var currentDate = new Date();
+            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+            var formattedDate = currentDate.toLocaleDateString('en-US', options);
+            
+            document.getElementById("dateResult").innerHTML = formattedDate;
+        }
+
+        function showTime() {
+            var currentTime = new Date();
+            var formattedTime = currentTime.toString();
+            
+            document.getElementById("timeResult").innerHTML = formattedTime;
+        }
+    </script>
+</body>
+</html>

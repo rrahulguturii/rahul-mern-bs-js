@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS-Task 2</title>
+</head>
+<body>
+    <h1>Sort Letters in a String</h1>
+    
+    <label for="inputString">Enter a string:</label>
+    <input type="text" id="inputString">
+    <button onclick="sortString()">Sort</button>
+
+    <p id="result"></p>
+
+    <script>
+        function sortString() {
+            var inputString = document.getElementById("inputString").value;
+
+            if (inputString.trim() !== '') {
+                var sortedString = inputString.split('').sort().join('');
+
+                document.getElementById("result").innerHTML = "Sorted String: " + sortedString;
+            } else {
+                document.getElementById("result").innerHTML = "Please enter a string.";
+            }
+        }
+    </script>
+</body>
+</html>
